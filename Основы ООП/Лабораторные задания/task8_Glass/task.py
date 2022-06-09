@@ -9,6 +9,7 @@ class Glass:
 
     def add_water(self, capacity_volume, occupied_volume):
 
+
 if __name__ == "__main__":
     glass = Glass(200, 100)  # экземпляр класса
     print(glass.capacity_volume, glass.occupied_volume)

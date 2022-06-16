@@ -14,7 +14,7 @@ class Node:
 
         # TODO заменить на вызов setter
         self.next = None
-        self.set_next(next_)
+        self.next = next_
 
     def __repr__(self) -> str:
         return f"Node({self.value}, {None})" if self.next is None else f"Node({self.value}, Node({self.next}))"
@@ -27,9 +27,17 @@ class Node:
             raise TypeError
 
     # TODO заменить на getter и setter
-    def set_next(self, next_: Optional["Node"] = None) -> None:
-        self.is_valid(next_)
-        self.next = next_
+    @property  # заменили публичный атрибут на приватный
+    def next(self):
+        return self.__next
+
+    @next.setter  # приватному атрибуту дали то значене которым обладал next
+    def next(self, value):
+        print("Вызван setter")
+        self.is_valid(value)    # перебрасывает на проверку выше
+        self.__next = value
+
+
 
 
 if __name__ == "__main__":
@@ -38,4 +46,4 @@ if __name__ == "__main__":
 
     first_node.next = second_node
 
-    print(repr(first_node), repr(first_node.next))
+    #print(repr(first_node), repr(first_node.next))

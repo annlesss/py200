@@ -33,3 +33,48 @@ class Node:
         self._next = next_
 
 # TODO реализовать класс DoubleLinkedNode
+
+
+class DoubleLinkedNode(Node):
+    def __init__( self, value: None, next_ = None, prev_ = None ):
+        super().__init__(value, next_)
+        self.prev = prev_
+
+    @property
+    def prev(self):
+        return self._prev
+
+    @prev.setter
+    def prev(self, prev_: Optional[DoubleLinkedNode] = None):
+        return self._prev
+
+
+    def __repr__(self):
+        next_repr: str = str(None) \
+            if self.next is None \
+            else f"DoubleLinkedNode({self.next.value}, {None}, {None})"
+        prev_repr: str = str(None) \
+            if self.prev is None \
+            else f"DoubleLinkedNode({self.prev.value}, {None}, {None})"
+        return f"DoubleLinkedNode({self.value}, {next_repr}, {prev_repr})"
+
+
+    if __name__ == 'main':
+        first_node = DoubleLinkedNode(1)
+        second_node = DoubleLinkedNode(2)
+        third_node = DoubleLinkedNode(3)
+        fourth_node = DoubleLinkedNode(4)
+
+        first_node.mext = second_node
+
+        second_node.prev = first_node
+        second_node.next = third_node
+
+        third_node.prev = second_node
+        third_node.next = fourth_node
+
+        print(repr(first_node))
+        print(repr(second_node))
+        print(repr(third_node))
+
+

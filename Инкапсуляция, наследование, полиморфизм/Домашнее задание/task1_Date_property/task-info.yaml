@@ -36,7 +36,7 @@ files:
       length: 53
       offset: 771
     initialized_from_dependency: false
-    selected: false
+    selected: true
     status: Solved
     encrypted_possible_answer: |-
       year_months_index = 0 if not self.is_leap_year(year) else 1

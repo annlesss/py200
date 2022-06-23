@@ -10,8 +10,8 @@ files:
       length: 39
       offset: 1172
     initialized_from_dependency: false
-    selected: false
-    status: Unchecked
+    selected: true
+    status: Solved
     encrypted_possible_answer: |-
       class JsonFileDriver(IStructureDriver):
           def __init__(self, json_filename):
@@ -86,6 +86,8 @@ files:
 - name: __init__.py
   visible: false
   learner_created: false
-status: Unchecked
+status: Solved
+feedback:
+  time: Thu, 23 Jun 2022 17:58:01 UTC
 record: -1
 post_submission_on_open: true

@@ -11,6 +11,13 @@ class LinkedListWithDriver(LinkedList):
         self.driver = driver
 
     # TODO свойство для driver (getter + setter)
+    @property
+    def driver(self):
+        return self._driver
+    @driver.setter
+    def driver(self, driver: IStructureDriver):
+        self._driver = driver
+
 
     def read(self):
         """ С помощью драйвера считать данные и поместить их в LinkedList. """
@@ -26,9 +33,9 @@ class LinkedListWithDriver(LinkedList):
 
 if __name__ == '__main__':
     ll = LinkedListWithDriver()
-    ll.driver = ...  # TODO инициализировать SimpleFileDriver
+    ll.driver = SimpleFileFactoryMethod.get_driver()  # TODO инициализировать SimpleFileDriver
     ll.read()
     print(ll)
 
-    ll.driver = ...  # TODO инициализировать JsonFileDriver
+    ll.driver = JsonFileDriverFactoryMethod.get_driver()  # TODO инициализировать JsonFileDriver
     ll.write()

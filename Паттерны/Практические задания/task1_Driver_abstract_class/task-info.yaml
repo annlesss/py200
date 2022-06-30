@@ -12,11 +12,11 @@ files:
     length: 0
     placeholder_text: '...  # TODO реализовать драйвер работы с текстовым файлом'
     initial_state:
-      length: 57
-      offset: 701
+      length: 0
+      offset: 783
     initialized_from_dependency: false
     selected: true
-    status: Solved
+    status: Unchecked
     encrypted_possible_answer: |-
       def __init__(self, filename):
               self.filename = filename
@@ -24,11 +24,11 @@ files:
     length: 0
     placeholder_text: '# TODO реализовать метод чтения данных из файла'
     initial_state:
-      length: 47
-      offset: 764
+      length: 0
+      offset: 783
     initialized_from_dependency: false
     selected: false
-    status: Solved
+    status: Unchecked
     encrypted_possible_answer: |-
       def read(self) -> Iterable:
               with open(self.filename) as f:
@@ -37,11 +37,11 @@ files:
     length: 0
     placeholder_text: '# TODO реализовать метод записи в файл построчно'
     initial_state:
-      length: 48
-      offset: 817
+      length: 0
+      offset: 1297
     initialized_from_dependency: false
     selected: true
-    status: Solved
+    status: Unchecked
     encrypted_possible_answer: |-
       def write(self, data: Iterable) -> None:
               with open(self.filename, "w") as f:
@@ -98,8 +98,5 @@ files:
 - name: output.txt
   visible: true
   learner_created: true
-status: Solved
-feedback:
-  message: Congratulations!
-  time: Thu, 23 Jun 2022 16:47:19 UTC
+status: Unchecked
 record: -1

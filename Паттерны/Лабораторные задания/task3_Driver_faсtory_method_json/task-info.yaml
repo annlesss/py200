@@ -10,7 +10,7 @@ files:
       length: 51
       offset: 641
     initialized_from_dependency: false
-    selected: true
+    selected: false
     status: Solved
     encrypted_possible_answer: |-
       class JsonFileDriverFactoryMethod(DriverFactoryMethod):
@@ -64,7 +64,7 @@ files:
   visible: true
   placeholders:
   - offset: 1172
-    length: 39
+    length: 6
     placeholder_text: '# TODO'
     dependency:
       section: Паттерны
@@ -76,7 +76,7 @@ files:
     initial_state:
       length: 6
       offset: 1172
-    initialized_from_dependency: true
+    initialized_from_dependency: false
     selected: false
     status: Solved
     encrypted_possible_answer: |-
@@ -155,7 +155,5 @@ files:
         print(read_data)
   learner_created: false
 status: Solved
-feedback:
-  time: Thu, 23 Jun 2022 18:02:19 UTC
 record: -1
 post_submission_on_open: true

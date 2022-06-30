@@ -20,7 +20,7 @@ files:
     length: 42
     placeholder_text: '...):  # TODO наследовать класс LinkedList'
     initial_state:
-      length: 42
+      length: 49
       offset: 181
     initialized_from_dependency: false
     selected: false
@@ -31,8 +31,8 @@ files:
     placeholder_text: '...  # TODO расширяем конструктор, чтобы в связном списке был
       driver'
     initial_state:
-      length: 68
-      offset: 312
+      length: 87
+      offset: 319
     initialized_from_dependency: false
     selected: true
     status: Solved
@@ -43,8 +43,8 @@ files:
     length: 38
     placeholder_text: '...  # TODO считать данные из драйвера'
     initial_state:
-      length: 38
-      offset: 489
+      length: 33
+      offset: 544
     initialized_from_dependency: false
     selected: false
     status: Solved
@@ -58,8 +58,8 @@ files:
     length: 46
     placeholder_text: '...  # TODO записать данные с помощью драйвера'
     initial_state:
-      length: 46
-      offset: 624
+      length: 41
+      offset: 829
     initialized_from_dependency: false
     selected: false
     status: Solved
@@ -68,8 +68,8 @@ files:
     length: 56
     placeholder_text: '...  # TODO инициализировать пустой LinkedListWithDriver'
     initial_state:
-      length: 56
-      offset: 709
+      length: 73
+      offset: 941
     initialized_from_dependency: false
     selected: false
     status: Solved
@@ -79,7 +79,7 @@ files:
     placeholder_text: '# TODO инициализировать драйвер и считать данные'
     initial_state:
       length: 48
-      offset: 817
+      offset: 1067
     initialized_from_dependency: false
     selected: false
     status: Solved
@@ -91,7 +91,7 @@ files:
     placeholder_text: '# TODO заменить драйвер и записать данные'
     initial_state:
       length: 41
-      offset: 934
+      offset: 1252
     initialized_from_dependency: false
     selected: false
     status: Solved

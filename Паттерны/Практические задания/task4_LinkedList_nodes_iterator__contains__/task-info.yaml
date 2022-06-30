@@ -17,7 +17,7 @@ files:
     length: 409
     placeholder_text: '...  # TODO функция-генератор для перебора всех узлов'
     initial_state:
-      length: 53
+      length: 209
       offset: 2238
     initialized_from_dependency: false
     selected: true
@@ -31,8 +31,8 @@ files:
     length: 36
     placeholder_text: '# TODO определить метод __contains__'
     initial_state:
-      length: 36
-      offset: 2297
+      length: 234
+      offset: 2453
     initialized_from_dependency: false
     selected: false
     status: Unchecked

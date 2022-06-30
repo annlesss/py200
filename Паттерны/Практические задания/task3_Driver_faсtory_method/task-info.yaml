@@ -27,8 +27,8 @@ files:
     length: 96
     placeholder_text: '...  # TODO с помощью фабричного метода инциализировать драйвер'
     initial_state:
-      length: 63
-      offset: 578
+      length: 96
+      offset: 703
     initialized_from_dependency: false
     selected: true
     status: Failed

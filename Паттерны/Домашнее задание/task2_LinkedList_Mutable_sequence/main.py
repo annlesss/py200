@@ -20,3 +20,6 @@ class LinkedList(MutableSequence):
 
 if __name__ == "__main__":
     ...
+
+
+# абстрактный тип  - это чертеж

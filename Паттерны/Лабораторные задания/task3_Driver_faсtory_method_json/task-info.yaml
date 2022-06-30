@@ -74,7 +74,7 @@ files:
       placeholder: 1
       is_visible: true
     initial_state:
-      length: 6
+      length: 39
       offset: 1172
     initialized_from_dependency: false
     selected: false

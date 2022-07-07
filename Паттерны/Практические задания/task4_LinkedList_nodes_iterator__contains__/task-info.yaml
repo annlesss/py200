@@ -34,7 +34,7 @@ files:
       length: 234
       offset: 2453
     initialized_from_dependency: false
-    selected: false
+    selected: true
     status: Unchecked
     encrypted_possible_answer: |-
       def __contains__(self, item):

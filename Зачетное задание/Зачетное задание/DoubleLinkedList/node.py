@@ -3,7 +3,7 @@ from typing import Any, Optional
 
 class Node:
     """ Класс, который описывает узел связного списка. """
-    def __init__(self, value, next_):
+    def __init__(self, value, next_: Optional["Node"] = None):
         """
         Создаем новый узел для односвязного списка
         :param value: Любое значение, которое помещено в узел
@@ -22,17 +22,16 @@ class Node:
         if not isinstance(node, (type(None), Node)):
             raise TypeError
 
-    @property  # protected атрибут
+    @property
     def next(self):
         return self._next
 
     @next.setter
-    def next(self, next_: Optional):
-        self.is_valid(next_)
+    def next(self, next_: Optional["Node"]):
+        # self.is_valid(next_)
         self._next = next_
-
-    def __del__(self):
-        print("Вызван метод \"__del__\"")
+    #def __del__(self):
+        #print("Вызван метод \"__del__\"")
 
 
 

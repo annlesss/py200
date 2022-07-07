@@ -15,6 +15,7 @@ class Rectangle(Figure):
     def __init__(self, a, b):  # TODO определить конструктор и перегрузить метод area
         self.a = a
         self.b = b
+
     def area(self):
         super().area()
         return self.a * self.b

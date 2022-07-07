@@ -64,7 +64,7 @@ class DoubleLinkedNode(Node):
         third_node = DoubleLinkedNode(3)
         fourth_node = DoubleLinkedNode(4)
 
-        first_node.mext = second_node
+        first_node.next = second_node
 
         second_node.prev = first_node
         second_node.next = third_node

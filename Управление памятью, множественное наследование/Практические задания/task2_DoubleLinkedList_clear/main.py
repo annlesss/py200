@@ -10,14 +10,14 @@ class DoubleLinkedNode(Node):
         super().__init__(value, next_)
         self.prev = prev
 
-    @property
+    @property # геттер
     def prev(self):
         return self._prev  # TODO объект теперь вызываемый
 
-    @prev.setter
+    @prev.setter # сеттер
     def prev(self, prev: Optional["Node"]):
         self.is_valid(prev)
-        self._prev = prev  # TODO сделать слабую ссылку
+        self._prev = None if prev is None else weakref.ref(prev)  # TODO сделать слабую ссылку
 
     def __repr__(self) -> str:
         next_prev = None if self.prev is None else f"DoubleLinkedNode({self.prev})"

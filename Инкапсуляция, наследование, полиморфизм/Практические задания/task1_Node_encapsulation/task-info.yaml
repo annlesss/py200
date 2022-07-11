@@ -26,7 +26,7 @@ files:
       length: 124
       offset: 520
     initialized_from_dependency: false
-    selected: false
+    selected: true
     status: Solved
     encrypted_possible_answer: f"Node({self.value}, {None})" if self.__next is None
       else f"Node({self.value}, Node({self.__next}))"

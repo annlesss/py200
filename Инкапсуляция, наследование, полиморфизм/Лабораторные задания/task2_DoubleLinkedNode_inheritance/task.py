@@ -58,14 +58,13 @@ class DoubleLinkedNode(Node):
             else f"DoubleLinkedNode({self.prev.value}, {None}, {None})"
         return f"DoubleLinkedNode({self.value}, {next_repr}, {prev_repr})"
 
-
     if __name__ == 'main':
         first_node = DoubleLinkedNode(1)
         second_node = DoubleLinkedNode(2)
         third_node = DoubleLinkedNode(3)
         fourth_node = DoubleLinkedNode(4)
 
-        first_node.mext = second_node
+        first_node.next = second_node
 
         second_node.prev = first_node
         second_node.next = third_node

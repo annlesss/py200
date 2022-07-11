@@ -8,24 +8,24 @@ files:
 - name: main.py
   visible: true
   placeholders:
-  - offset: 701
-    length: 57
+  - offset: 783
+    length: 0
     placeholder_text: '...  # TODO реализовать драйвер работы с текстовым файлом'
     initial_state:
-      length: 57
-      offset: 701
+      length: 0
+      offset: 783
     initialized_from_dependency: false
-    selected: false
+    selected: true
     status: Unchecked
     encrypted_possible_answer: |-
       def __init__(self, filename):
               self.filename = filename
-  - offset: 764
-    length: 47
+  - offset: 783
+    length: 0
     placeholder_text: '# TODO реализовать метод чтения данных из файла'
     initial_state:
-      length: 47
-      offset: 764
+      length: 0
+      offset: 783
     initialized_from_dependency: false
     selected: false
     status: Unchecked
@@ -33,14 +33,14 @@ files:
       def read(self) -> Iterable:
               with open(self.filename) as f:
                   return [int(line) for line in f]
-  - offset: 817
-    length: 48
+  - offset: 1297
+    length: 0
     placeholder_text: '# TODO реализовать метод записи в файл построчно'
     initial_state:
-      length: 48
-      offset: 817
+      length: 0
+      offset: 1297
     initialized_from_dependency: false
-    selected: false
+    selected: true
     status: Unchecked
     encrypted_possible_answer: |-
       def write(self, data: Iterable) -> None:
@@ -95,5 +95,8 @@ files:
 - name: __init__.py
   visible: false
   learner_created: false
+- name: output.txt
+  visible: true
+  learner_created: true
 status: Unchecked
 record: -1

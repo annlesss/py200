@@ -9,15 +9,15 @@ files:
 - name: main.py
   visible: true
   placeholders:
-  - offset: 3237
-    length: 153
+  - offset: 3214
+    length: 61
     placeholder_text: '...  # TODO определить одновременное умножение и присваивание'
     initial_state:
       length: 61
       offset: 3214
     initialized_from_dependency: false
     selected: true
-    status: Solved
+    status: Unchecked
     encrypted_possible_answer: |-
       if not isinstance(other, int):
                   raise TypeError
@@ -187,8 +187,5 @@ files:
             self.is_valid(next_)
             self._next = next_
   learner_created: false
-status: Solved
-feedback:
-  message: Congratulations!
-  time: Thu, 23 Jun 2022 10:28:54 UTC
+status: Unchecked
 record: -1

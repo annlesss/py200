@@ -71,7 +71,7 @@ class LinkedList:
         return f"{self.to_list()}"
 
     def nodes_iterator(self) -> Iterator[Node]:
-        current_node = self.head
+        current_node = self.head    # функция генератор
         for _ in range(self.len):
             yield current_node
             current_node = current_node.next
@@ -84,3 +84,6 @@ if __name__ == '__main__':
 
     for node in ll.nodes_iterator():
         print(sys.getrefcount(node))
+
+
+# для 1 эл-та 1-я ссылка от head, 2 от getrefcount, 3 от for цикла, 4 от функции генератора, для 5 эл-та все тоже + tail

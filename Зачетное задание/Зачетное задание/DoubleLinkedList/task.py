@@ -1,6 +1,7 @@
 from collections.abc import MutableSequence
 from typing import Any, Optional, Iterable
 from node import Node
+from node import DoubleLinkedNode
 
 
 class LinkedList(MutableSequence):
@@ -79,30 +80,13 @@ class LinkedList(MutableSequence):
 
 
 class DoubleLinkedList(LinkedList):
-
-    def __init__(self, value, next = None, prev_: Optional["Node"] = None):
-        # super().__init__(value, next)
-        self.next = None
-        self.value = value
-        self.__prev = prev_  # private атрибут
-
-    @property
-    def _prev(self):
-        return self.prev
-
-    @_prev.setter
-    def _prev(self, prev=None):
-        # self.is_valid(prev)
-        self.prev = prev
-
     @staticmethod
-    def linked_nodes(left_node: Node, right_node: Optional[Node] = None) -> None:
+    def linked_nodes(left_node: DoubleLinkedNode, right_node: Optional[DoubleLinkedNode] = None) -> None:
         left_node.next = right_node
         right_node.prev = left_node
 
-    def to_list(self, value):
-        """ Добавление элемента в конец связного списка. """
-        append_node = Node(value)
+    def append(self, value: Any):
+        append_node = DoubleLinkedNode(value)
 
         if self.head is None:
             self.head = self.tail = append_node
@@ -112,25 +96,14 @@ class DoubleLinkedList(LinkedList):
 
         self.len += 1
 
-    def __repr__(self) -> str:
-        return f"({self.value, self.next, self.prev})"
 
 if __name__ == "__main__":
-    first_value = DoubleLinkedList(1)
-    second_value = DoubleLinkedList(2)
-    third_value = DoubleLinkedList(3)
-
-    first_value.next_ = second_value
-    second_value.next_ = third_value
-    third_value.next_ = None
-
-    first_value._prev = None
-    second_value._prev = first_value
-    third_value._prev = second_value
-
-    print(repr(first_value))
-    print(repr(second_value))
-    print(repr(third_value))
-    print(repr(second_value.prev))
-    print(repr(first_value.next))
-    print(repr(first_value.prev))
+    dllist = DoubleLinkedList()
+    dllist.append(1)
+    dllist.append(2)
+    dllist.append(3)
+    dllist.append(4)
+    print(repr(dllist))
+    print(str(dllist))
+    print(dllist.len)
+    print(dllist.to_list())
